@@ -1,0 +1,123 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f8ff;
+    color: #334155; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.bmi-card {
+    background: #ffffff;
+    padding: 35px;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(37, 99, 235, 0.1);
+    width: 320px;
+}
+
+h2 {
+    margin-top: 0;
+    text-align: center;
+    color: #1d4ed8;
+    letter-spacing: 1px;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 6px;
+    font-size: 14px;
+    color: #475569;
+    font-weight: 500;
+}
+
+.input-with-unit {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.input-with-unit input {
+    flex: 2; 
+}
+
+.input-with-unit select, .unit-label {
+    flex: 1; 
+}
+
+.unit-label {
+    background-color: #f8fafc;
+    border: 2px solid #bfdbfe;
+    border-radius: 8px;
+    padding: 10px;
+    text-align: center;
+    font-size: 16px;
+    color: #64748b;
+    box-sizing: border-box;
+}
+
+input[type="number"], select {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #bfdbfe;
+    border-radius: 8px;
+    background-color: #ffffff;
+    color: #1e293b;
+    font-size: 16px;
+    box-sizing: border-box;
+    transition: all 0.2s;
+}
+
+input[type="number"]:focus, select:focus {
+    outline: none;
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.15);
+}
+
+select {
+    cursor: pointer;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 15px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+    background-color: #3b82f6;
+    color: #ffffff;
+    font-weight: bold;
+    transition: all 0.2s ease-in-out;
+    box-shadow: 0 4px 6px rgba(59, 130, 246, 0.2);
+}
+
+button:hover {
+    background-color: #2563eb;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(59, 130, 246, 0.3);
+}
+
+.result-container {
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 8px;
+    background-color: #eff6ff;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    border: 1px solid #bfdbfe;
+    color: #1e3a8a;
+}
+
+.skinny { color: #0284c7; }
+.normal { color: #16a34a; }
+.overweight { color: #ca8a04; }
+.obese { color: #dc2626; }
+.error { color: #dc2626; }

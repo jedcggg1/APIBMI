@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator API</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="bmi-card">
+        <h2>BMI Calculator</h2>
+        
+        <div class="input-group">
+            <label for="weight">Weight</label>
+            <div class="input-with-unit">
+                <input type="number" id="weight" placeholder="e.g., 65">
+                <span class="unit-label">kg</span>
+            </div>
+        </div>
+
+        <div class="input-group">
+            <label for="height">Height</label>
+            <div class="input-with-unit">
+                <input type="number" id="height" placeholder="e.g., 170">
+                <span class="unit-label">cm</span>
+            </div>
+        </div>
+
+        <button id="calculateBTN">Calculate BMI</button>
+
+        <div class="result-container">
+            <p>BMI: <span id="bmiValue">--</span></p>
+            <p>Result: <span id="bmiCategory">--</span></p>
+        </div>
+    </div>
+</body>
+</html>
